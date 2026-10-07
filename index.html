@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar evento</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body class="body">
+
+    <header class="cabecalho">
+
+        <div class="conteudocabecalho">
+        <h1 class="titulo titulo1">Crie e compartilhe seu evento.</h1>
+        <h3 class="subtitulo">O primeiro passo, é preencher esse formulário de inscrição.</h3>
+        </div>
+
+    </header>
+
+    <form class="formulario">
+
+        <h3 class="titulo titulo2">Informações do Evento</h3>
+        <hr class="linha">
+
+        <div class="campo">
+        <label for="titulo">Título do evento <span>(mínimo 8 caracteres)</span></label>
+        <textarea type="text" id="titulo" class="textarea"></textarea>
+        </div>
+
+        <div class="campo">
+        <label for="link">Link do evento <span>(comece com https://)</span></label>
+        <textarea type="text" id="link" class="textarea"></textarea>
+        </div>
+
+        <div class="campo">
+        <label for="num">Whatsapp para contato <span>(somente números)</span></label>
+        <textarea type="number" id="num" class="textarea red"></textarea>
+        </div>
+
+        <div class="campo">
+        <label for="extras">Informações extras</label>
+        <textarea type="text" id="extras" class="textarea textarea3"></textarea>
+        </div>
+
+        <div class="campo">
+        <label for="categoria">Categoria</label>
+        <select name="categoria" class="selectarea">
+            <option value="" disabled selected>Tipo do evento</option>
+        </select>
+        </div>
+
+        <h3 class="titulo titulo2">Privacidade</h3>
+        <hr class="linha">
+
+        <div class="campo">
+        <label for="titulo">Email do administrador <span>(digite um email válido)</span></label>
+        <textarea type="text" id="titulo" class="textarea"></textarea>
+        </div>
+
+        <div class="campo">
+        <label for="titulo">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span></label>
+        <textarea type="text" id="titulo" class="textarea"></textarea>
+        </div>
+
+        <div class="checkbox">
+        <input type="checkbox" id="evento">
+        <label for="evento">Evento privado</label>
+        </div>
+
+        <h3 class="titulo titulo2">Data e Hora</h3>
+        <hr class="linha">
+
+        <div class="data-hora">
+        <div>
+            <label>Data</label>
+            <input type="text" class="campo-data">
+        </div>
+
+        <div>
+            <label>Das</label>
+            <input type="text" class="campo-hora" placeholder="19:00">
+        </div>
+
+        <div>
+            <label>Até</label>
+            <input type="text" class="campo-hora" placeholder="20:00">
+        </div>
+        </div>
+
+        <div class="areabotao">
+            <button class="botao">Salvar evento</button>
+        </div>
+        
+</body>
+</html>
